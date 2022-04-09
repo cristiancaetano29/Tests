@@ -1,10 +1,18 @@
 *{
     box-sizing: border-box;
-    
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #0E185F, #2FA4FF, #00FFDD, #E8FFC2);
+    background-size: 200% 200%;
+    animation: colors 8s ease infinite;
 }
 
 header{
@@ -12,7 +20,6 @@ header{
     width: 60%;
     margin: auto;
     border-radius: 8px;
-    margin-top: 20px;
 }
 
 nav > img{
@@ -95,4 +102,18 @@ footer{
 a {
     text-decoration: none;
     color: tomato;
+}
+
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
 }
